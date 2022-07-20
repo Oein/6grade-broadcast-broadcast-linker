@@ -15,7 +15,10 @@ export default function L() {
   return (
     <>
       <h1>Wait a moment</h1>
-      <h2>I'm redirecting you to Heungo Elementry school's broadcast link.</h2>
+      <h2>
+        I&apos;m redirecting you to Heungo Elementry school&apos;s broadcast
+        link.
+      </h2>
     </>
   );
 }

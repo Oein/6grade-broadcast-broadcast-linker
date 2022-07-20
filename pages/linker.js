@@ -4,9 +4,10 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Load from "../components/loading";
 
-export default function linker() {
-  let [ld, setL] = useState(false);
-  let [ip, setI] = useState("");
+export default function Linker() {
+  const [ld, setL] = useState(false);
+  const [ip, setI] = useState("");
+
   return (
     <>
       <ToastContainer position="bottom-left" autoClose={3000} />
