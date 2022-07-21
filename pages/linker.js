@@ -26,7 +26,7 @@ export default function Linker() {
           marginBottom: "30px",
         }}
       >
-        <h1>Oein's Heungo Broadcast Linker</h1>
+        <h1>Oein&apos;s Heungo Broadcast Linker</h1>
       </header>
       <ToastContainer position="bottom-left" autoClose={3000} />
       {ld ? <Load /> : null}
