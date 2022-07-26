@@ -33,8 +33,8 @@ export default function L() {
       <desc>흥도초등학교 유튜브 스트리밍 링크로 이동중 입니다!</desc>
       <p></p>
       <desc>
-        {st.split("\n").map((v) => {
-          return <p>{v}</p>;
+        {st.split("\n").map((v, id) => {
+          return <p key={id}>{v}</p>;
         })}
       </desc>
     </header>
