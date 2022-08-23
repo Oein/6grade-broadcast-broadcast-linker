@@ -10,12 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ProblemVote {
-  ranks Json
-  votedBy Json[]
-  name String @id
-}
-
 model youtubeLINK {
   url String
   id String @id
