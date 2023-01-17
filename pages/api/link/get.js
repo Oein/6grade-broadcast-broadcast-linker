@@ -5,7 +5,7 @@ export default function handler(req, res) {
   prisma.ShortURL
     .findFirst({
       where: {
-        short: "HDEYTL",
+        short: "hdyt",
       },
     })
     .then((dt) => {
