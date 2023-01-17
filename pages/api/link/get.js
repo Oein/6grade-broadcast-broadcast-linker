@@ -2,10 +2,10 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export default function handler(req, res) {
-  prisma.youtubeLINK
+  prisma.ShortURL
     .findFirst({
       where: {
-        id: "HDEYTL",
+        short: "HDEYTL",
       },
     })
     .then((dt) => {
