@@ -7,7 +7,7 @@ export default function handler(req, res) {
 
   console.log(url);
 
-  prisma.youtubeLINK
+  prisma.shortURL
     .update({
       where: {
         short: "hdyt",
