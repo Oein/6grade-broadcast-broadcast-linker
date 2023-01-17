@@ -10,7 +10,7 @@ export default function handler(req, res) {
   prisma.youtubeLINK
     .update({
       where: {
-        short: "HDEYTL",
+        short: "hdyt",
       },
       data: {
         long: encodeURI(url),
