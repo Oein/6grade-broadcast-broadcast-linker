@@ -2,16 +2,15 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export default function handler(req, res) {
-  prisma.shortURL
-    .findFirst({
+  prisma.shortURL.findFirst({
       where: {
         short: "hdyt",
       },
     })
     .then((dt) => {
-      if (dt == undefined) res.end("/");
+      if (!dt) res.end("/");
       else {
-        res.end(encodeURI(dt.url.toString()));
+        res.end(encodeURI(dt.long.toString()));
       }
     });
 }
