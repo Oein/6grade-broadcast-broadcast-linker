@@ -10,10 +10,10 @@ export default function handler(req, res) {
   prisma.youtubeLINK
     .update({
       where: {
-        id: "HDEYTL",
+        short: "HDEYTL",
       },
       data: {
-        url: encodeURI(url),
+        long: encodeURI(url),
       },
     })
     .then(() => {
